@@ -18,27 +18,43 @@ public class ManagerDb {
         db=bdHelper.getReadableDatabase();
     }
 
-    public long inserData(){
+    public long inserData(Ciudad ciudad){
         //abrir mi db en modo escritura
         openDNWRITE();
         //contenedor de valores
         ContentValues values = new ContentValues();
-        values.put("cod",1);
-        values.put("nombre","BARRANCABERMEJA");
+
+        values.put("cod",ciudad.getCod());
+        values.put("nombre",ciudad.getName());
 
         long resul = db.insert("Ciudad",null,values);
         return resul;
 
     }
-    public  long Inserdatados(){
+    public  long Inserdatados(Datos datos{
         openDNWRITE();
         ContentValues values= new ContentValues();
-        values.put("cod",1);
+        values.put("cod",datos.getCod_dato());
         values.put("cod_CUIDAD",1);
         values.put("nombre","ABERLARDO");
         values.put("apellido","khalifa");
         long resull = db.insert("DATOS",null,values);
         return resull;
+    }
+
+    public  long DatosRegist(){
+        openDNWRITE();
+        ContentValues values=new ContentValues();
+        values.put();
+        values
+
+
+
+        long resulRegist=db.insert("REGISTRADURIA",null,values);
+        return resulRegist;
+
+
+
     }
 
 

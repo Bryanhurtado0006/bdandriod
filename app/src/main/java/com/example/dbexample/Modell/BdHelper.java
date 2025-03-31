@@ -15,6 +15,7 @@ public class BdHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(Constantes.SENTENCIACIUDAD);
         sqLiteDatabase.execSQL(Constantes.SENTENCIASDATOS);
+        sqLiteDatabase.execSQL(Constantes.SENTENCIAREGISTRADURIA);
 
     }
 
@@ -22,6 +23,7 @@ public class BdHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS Ciudad");
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS DATOS");
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS REGISTRADURIA");
         onCreate(sqLiteDatabase);
 
     }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="LISTA DE CIUDADES DEL DEPARTAMENTO"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/Cod_ciudda"
+        android:layout_height="67dp"
+        android:layout_margin="8dp"
+        android:hint="Ingresa el código de la ciudad"
+        android:textAlignment="center" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/IngresaCiudad_dep"
+        android:layout_height="59dp"
+        android:layout_margin="8dp"
+        android:hint="Ingresa la ciudad"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/btnGuardar111"
+        android:layout_width="139dp"
+
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="Guardar"
+        android:textSize="19dp"
+
+        android:textColorLink="@color/black" />
+
+
+</LinearLayout>
