@@ -31,25 +31,24 @@ public class ManagerDb {
         return resul;
 
     }
-    public  long Inserdatados(Datos datos{
+    public  long Inserdatados(Datos datos){
         openDNWRITE();
         ContentValues values= new ContentValues();
         values.put("cod",datos.getCod_dato());
-        values.put("cod_CUIDAD",1);
-        values.put("nombre","ABERLARDO");
-        values.put("apellido","khalifa");
+        values.put("cod_CUIDAD",datos.getCodigo_citi());
+        values.put("nombre",datos.getNombre_persona());
+        values.put("apellido",datos.getApellido_persona());
         long resull = db.insert("DATOS",null,values);
         return resull;
     }
 
-    public  long DatosRegist(){
+    public  long DatosRegist(Regis regis){
         openDNWRITE();
         ContentValues values=new ContentValues();
-        values.put();
-        values
-
-
-
+        values.put("cod",regis.getCodi_regis());
+        values.put("Documento",regis.getDocumenti());
+        values.put("Fecha de nacimiento",regis.getFecha_naci());
+        values.put("expedicion",regis.getExpedicion());
         long resulRegist=db.insert("REGISTRADURIA",null,values);
         return resulRegist;
 

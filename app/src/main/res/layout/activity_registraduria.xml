@@ -20,6 +20,7 @@
 
     <EditText
         android:layout_width="match_parent"
+        android:id="@+id/cod_regist"
         android:layout_height="67dp"
         android:layout_margin="8dp"
         android:hint="Ingresa el código "
@@ -29,18 +30,21 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="59dp"
+        android:id="@+id/documentt"
         android:layout_margin="8dp"
         android:hint="Ingresa tu documento"
         android:textAlignment="center" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="59dp"
+        android:id="@+id/date_nacimi"
         android:layout_margin="8dp"
         android:hint="Ingresa tu fecha de nacimiento"
         android:textAlignment="center" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="59dp"
+        android:id="@+id/expedi"
         android:layout_margin="8dp"
         android:hint="ingresa la fecha de expedicion del documento"
         android:textAlignment="center" />
